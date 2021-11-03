@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto+Slab:wght@200&display=swap');
+
 .navbar {
     background-color: #44220C;
 }
@@ -5,7 +8,7 @@
 .navbar-brand {
     transform: translateX(-50%);
     left: 50%;
-    margin-top: -50px;
+    margin-top: -70px;
     position: absolute;
 }
 
@@ -17,8 +20,82 @@
     color: #7FD0D3;
 }
 
-/* @media (max-width:300px) {
-    .navbar-brand {
-        position: initial;
+.content {
+    background-color: #FAF7F1 !important;
+}
+
+.top-section {
+    font-family: Lobster Two;
+    color: #44220C;
+}
+
+.top-section h1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.left-section {
+    width: 50%;
+    height: 50%;
+    font-family: Roboto Slab;
+}
+
+.left-section p {
+    color: #44220C;
+}
+
+.right-section {
+    width: 50%;
+    height: 50%;
+}
+
+.color-pallete {
+    list-style: none;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    font-size: 8px;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .details {
+        flex-direction: column-reverse;
     }
-} */
+
+    .left-section {
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .right-section {
+        width: 100% !important;
+        height: 100%;
+    }
+}
+
+.add-to-cart-section {
+    background-color: #44220C;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.price-section h2 {
+    font-weight: bold;
+}
+
+.cart-button,
+.dropbown-button {
+    background-color: #7FD0D3 !important;
+    color: #44220C !important;
+    font-weight: bold;
+}
