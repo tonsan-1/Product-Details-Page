@@ -16,7 +16,7 @@
   <header>
     <nav class="navbar p-4 navbar-default navbar-expand-lg">
       <div class="container">
-        <a class="navbar-item text-white" href="">
+        <a id="basket" class="navbar-item text-white" href="">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag fluid"
             viewBox="0 0 16 16">
             <path
@@ -24,7 +24,7 @@
           </svg>
         </a>
         <div class="navbar-header">
-          <img class="fluid navbar-brand" src="./assets/img/logo.png" alt="logo">
+          <img class="img-fluid navbar-brand" src="./assets/img/logo.png" alt="logo">
         </div>
       </div>
     </nav>
@@ -32,21 +32,21 @@
   <div class="content pt-5">
     <div class="container d-flex flex-column justify-content-center">
       <section class="top-section mt-5 mb-3 d-flex flex-column align-items-center mw-100 text-center">
-        <h1 class="h-1 p-1">Pecan Dandy: Individually Wrapped 18-Pack</h1>
+        <h1 id="product-name" class="h-1 p-1">Pecan Dandy: Individually Wrapped 18-Pack</h1>
         <h4 class="h-4 mt-2">Item No: fc369c9a-e8f1-4f81-b9bd-572b7fc0b038</h4>
       </section>
-      <div class="details d-flex my-4 justify-content-between align-items-center">
-        <section class="left-section card d-flex flex-column bg-white rounded m-4 shadow">
-          <div class="color-section d-flex flex-column px-4 py-3">
+      <section class="details d-flex my-4 mb-5 justify-content-between align-items-center">
+        <section class="left-section card d-flex flex-column bg-white rounded shadow">
+          <div class="color-section d-flex flex-column p-4">
             <h4 class="h-4">Select Color</p>
               <div class="color-pallete">
-                <button class="button btn-circle">
+                <button id="red" class="button btn-circle">
 
                 </button>
-                <button class="button btn-circle">
+                <button id="blue" class="button btn-circle">
 
                 </button>
-                <button class="button btn-circle">
+                <button id="green" class="button btn-circle">
 
                 </button>
               </div>
@@ -58,7 +58,7 @@
                   data-bs-toggle="dropdown" aria-expanded="false">
                   Select Size
                 </button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
                   <li><a class="dropdown-item active" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -79,7 +79,7 @@
                   data-bs-toggle="dropdown" aria-expanded="false">
                   1
                 </button>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
                   <li><a class="dropdown-item active" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -95,7 +95,7 @@
             <h2 class="h-2">$40.00</h2>
           </div>
           <div class="add-to-cart-section p-5 w-100">
-            <button class="button cart-button p-2 rounded shadow w-100">Add to Cart</button>
+            <button id="add-to-cart" class="button cart-button p-2 rounded shadow w-100">Add to Cart</button>
           </div>
         </section>
         <section class="right-section m-4">
@@ -126,13 +126,27 @@
             </button>
           </div>
         </section>
-      </div>
+      </section>
 
     </div>
   </div>
-  <footer>
-
+  <footer class="p-4 text-white-50">
+    <div class="container footer-container d-flex justify-content-between">
+      <div class="col-lg-4 footer-line text-center">
+        <a class="text-white text-decoration-none" href="#product-name">Pecan Dandy: Individually
+          Wrapped 18-Pack</a>
+      </div>
+      <div class="vertical"></div>
+      <div class="col-lg-4 footer-line text-center">
+        <a class="text-white text-decoration-none" href="#basket">Add to Cart</a>
+      </div>
+      <div class="vertical"></div>
+      <div class="col-lg-4 footer-line text-center">
+        <a class="text-white text-decoration-none" href="#images">Images</a>
+      </div>
+    </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>

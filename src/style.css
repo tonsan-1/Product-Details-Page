@@ -1,6 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto+Slab:wght@200&display=swap');
 
+@media (max-width:768px) {
+    .details {
+        flex-direction: column-reverse;
+    }
+
+    .left-section {
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .right-section {
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-line {
+        margin-top: 10px;
+    }
+}
+
 .navbar {
     background-color: #44220C;
 }
@@ -62,20 +87,16 @@
     text-align: center;
 }
 
-@media (max-width:768px) {
-    .details {
-        flex-direction: column-reverse;
-    }
+#red {
+    background-color: orangered;
+}
 
-    .left-section {
-        width: 100% !important;
-        height: 100%;
-    }
+#blue {
+    background-color: royalblue;
+}
 
-    .right-section {
-        width: 100% !important;
-        height: 100%;
-    }
+#green {
+    background-color: palegreen;
 }
 
 .add-to-cart-section {
@@ -98,4 +119,17 @@ hr {
     background-color: #7FD0D3 !important;
     color: #44220C !important;
     font-weight: bold;
+}
+
+footer {
+    background-color: #44220C;
+}
+
+.vertical {
+    content: '';
+    border-right: 1px solid white;
+}
+
+.footer-line a:hover {
+    color: #7FD0D3 !important;
 }
