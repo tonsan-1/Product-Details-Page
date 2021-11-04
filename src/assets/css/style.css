@@ -114,10 +114,9 @@ hr {
     font-weight: bold;
 }
 
-.cart-button,
-.dropbown-button {
-    background-color: #7FD0D3 !important;
-    color: #44220C !important;
+.cart-button {
+    background-color: #7FD0D3;
+    color: #44220C;
     font-weight: bold;
 }
 

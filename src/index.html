@@ -32,80 +32,51 @@
   <div class="content pt-5">
     <div class="container d-flex flex-column justify-content-center">
       <section class="top-section mt-5 mb-3 d-flex flex-column align-items-center mw-100 text-center">
-        <h1 id="product-name" class="h-1 p-1">Pecan Dandy: Individually Wrapped 18-Pack</h1>
-        <h4 class="h-4 mt-2">Item No: fc369c9a-e8f1-4f81-b9bd-572b7fc0b038</h4>
+        <h1 id="product-name" class="h-1 p-1"></h1>
+        <h4 id="product-id" class="h-4 mt-2"></h4>
       </section>
       <section class="details d-flex my-4 mb-5 justify-content-between align-items-center">
         <section class="left-section card d-flex flex-column bg-white rounded shadow">
           <div class="color-section d-flex flex-column p-4">
             <h4 class="h-4">Select Color</p>
               <div class="color-pallete">
-                <button id="green" class="button btn-circle"></button>
-                <button id="black" class="button btn-circle"></button>
-                <button id="beige" class="button btn-circle"></button>
+                <button onclick="selectColor('green')" id="green" class="button btn-circle"></button>
+                <button onclick="selectColor('black')" id="black" class="button btn-circle"></button>
+                <button onclick="selectColor('beige')" id="beige" class="button btn-circle"></button>
               </div>
           </div>
           <div class="size-section d-flex flex-column px-4 py-3">
             <h4 class="h-4">Select Size</p>
-              <div class="dropdown">
-                <button class="btn dropbown-button dropdown-toggle" type="button" id="dropdownMenuButton2"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Select Size
-                </button>
-                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-              </div>
+              <select id="sizing-select" class="form-select size-1" aria-label="Default select example">
+              </select>
           </div>
           <div class="availability-section px-4 py-3">
-            <h4 class="h-4">Availability: Select size for Availability</p>
-          </div>
-          <div class="quantity-section px-4 py-3">
-            <h4 class="h-4">Quantity</p>
-              <div class="dropdown">
-                <button class="btn dropbown-button dropdown-toggle" type="button" id="dropdownMenuButton2"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  1
-                </button>
-                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item active" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-              </div>
+            <h4 id="availability" class="h-4">Availability: Select size for Availability</p>
           </div>
           <hr>
           <div class="price-section d-flex justify-content-center px-4 py-3 w-100">
-            <h2 class="h-2">$40.00</h2>
+            <h2 id="price" class="h-2"></h2>
           </div>
           <div class="add-to-cart-section p-5 w-100">
             <button id="add-to-cart" class="button cart-button p-2 rounded shadow w-100">Add to Cart</button>
           </div>
         </section>
         <section class="right-section m-4">
-          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-touch="true">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
-                <img src="./assets/img/product-pic1.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item" data-bs-interval="2000">
-                <img src="./assets/img/Nike Manoa Leather/1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
@@ -127,8 +98,7 @@
   <footer class="p-3 text-white-50">
     <div class="container footer-container d-flex justify-content-between">
       <div class="col-lg-4 footer-line text-center">
-        <a class="text-white text-decoration-none" href="#product-name">Pecan Dandy: Individually
-          Wrapped 18-Pack</a>
+        <a id="footer-product-name" class="text-white text-decoration-none" href="#product-name"></a>
       </div>
       <div class="vertical ms-2"></div>
       <div class="col-lg-4 footer-line text-center">
@@ -141,6 +111,7 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
