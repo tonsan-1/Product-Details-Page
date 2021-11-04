@@ -26,6 +26,10 @@
     }
 }
 
+body {
+    background-color: #FAF7F1 !important;
+}
+
 .navbar {
     background-color: #44220C;
 }
@@ -43,10 +47,6 @@
 
 .navbar-item svg:hover {
     color: #7FD0D3;
-}
-
-.content {
-    background-color: #FAF7F1 !important;
 }
 
 .top-section {
@@ -87,16 +87,16 @@
     text-align: center;
 }
 
-#red {
-    background-color: orangered;
-}
-
-#blue {
-    background-color: royalblue;
-}
-
 #green {
-    background-color: palegreen;
+    background-color: #969580;
+}
+
+#black {
+    background-color: #2A2829;
+}
+
+#beige {
+    background-color: #B57E4B;
 }
 
 .add-to-cart-section {
